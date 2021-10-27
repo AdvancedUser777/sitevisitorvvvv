@@ -18,7 +18,7 @@ except ImportError:
         # be sure to comment out the list below it.
         #ROOT_URLS = ["https://digg.com/"]
         ROOT_URLS = [
-            "http://51.38.169.89"
+            "https://bestlife7771.blogspot.com/2021/10/2-2-8-7.html"
         ]
 
         # items can be a URL "https://t.co" or simple string to check for "amazon"
