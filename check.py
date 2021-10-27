@@ -10,8 +10,8 @@ except ImportError:
     class ConfigClass:  # minimal config incase you don't have the config.py
         MAX_DEPTH = 500000  # dive no deeper than this for each root URL
         MIN_DEPTH = 500000   # dive at least this deep into each root URL
-        MAX_WAIT = 0   # maximum amount of time to wait between HTTP requests
-        MIN_WAIT = 0    # minimum amount of time allowed between HTTP requests
+        MAX_WAIT = 0.1   # maximum amount of time to wait between HTTP requests
+        MIN_WAIT = 0.01    # minimum amount of time allowed between HTTP requests
         DEBUG = False    # set to True to enable useful console output
 
         # use this single item list to test how a site responds to this crawler
@@ -178,4 +178,6 @@ if __name__ == "__main__":
         depth = random.choice(range(config.MIN_DEPTH, config.MAX_DEPTH))
 
         recursive_browse(random_url, depth)
+        
+        
 
