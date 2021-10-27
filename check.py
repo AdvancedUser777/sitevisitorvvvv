@@ -1,6 +1,5 @@
 import selenium
 import webdriver
-from selenium 
 from webdriver_manager.chrome import ChromeDriverManager
 browser  = webdriver.Chrome(ChromeDriverManager().install())
 # ======= Setting =============
